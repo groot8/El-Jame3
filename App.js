@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     // paddingTop: 50,
   },
   statusbar: {
-    height: 36,
+    height: 30,
     backgroundColor: '#fff',
   },
 });
