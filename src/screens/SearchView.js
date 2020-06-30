@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Text, ScrollView } from 'react-native';
 import ResultCard from '../components/ResultCard';
 import axios from 'axios';
+import { SearchField } from '../components/SearchBar';
 
 const SearchView = () => {
   const [nearResults, setNearResult] = useState([]);
@@ -23,6 +24,7 @@ const SearchView = () => {
     ));
   return (
     <View style={styles.container}>
+      <SearchField />
       <View style={styles.header}>
         <Text
           style={{
@@ -53,5 +55,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 10,
     height: 25,
+    backgroundColor: '#fff',
   },
 });
