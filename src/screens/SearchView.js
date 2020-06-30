@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet, Text, Image } from 'react-native';
+import { View, StyleSheet, Text, ScrollView } from 'react-native';
 import ResultCard from '../components/ResultCard';
 import axios from 'axios';
 
@@ -34,8 +34,11 @@ const SearchView = () => {
           مساجد بالقرب من موقعك
         </Text>
       </View>
-
-      {renderNearResult()}
+      <ScrollView style={{ paddingRight: 50 }}>
+        {renderNearResult()}
+        {renderNearResult()}
+        {renderNearResult()}
+      </ScrollView>
     </View>
   );
 };
@@ -52,6 +55,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row-reverse',
     alignItems: 'flex-start',
     marginTop: 20,
+    marginBottom: 10,
     height: 25,
   },
 });
