@@ -34,11 +34,7 @@ const SearchView = () => {
           مساجد بالقرب من موقعك
         </Text>
       </View>
-      <ScrollView style={{ paddingRight: 50 }}>
-        {renderNearResult()}
-        {renderNearResult()}
-        {renderNearResult()}
-      </ScrollView>
+      <ScrollView style={{ paddingRight: 50 }}>{renderNearResult()}</ScrollView>
     </View>
   );
 };
